@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Elegant Hospital Admission Form</title>
+    <style>
+        body {
+            background: #e0f7fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            background-color: #ffffff;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #00796b;
+            margin-bottom: 30px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: 500;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="date"],
+        input[type="tel"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px 12px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        .button-group {
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #00796b;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            margin: 5px;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="reset"] {
+            background-color: #c62828;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #004d40;
+        }
+
+        input[type="reset"]:hover {
+            background-color: #b71c1c;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Hospital Admission Form</h2>
+    <form action="#" method="post">
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" required>
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" min="0" required>
+
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender" required>
+            <option value="">-- Select --</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            
+        </select>
+
+        <label for="phone">Contact Number</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="e.g., 9876543210" required>
+
+        <label for="address">Address</label>
+        <textarea id="address" name="address" rows="3" required></textarea>
+
+        <label for="history">Medical History (if any)</label>
+        <textarea id="history" name="history" rows="3"></textarea>
+
+        <label for="reason">Reason for Admission</label>
+        <textarea id="reason" name="reason" rows="3" required></textarea>
+
+        <label for="admission-date">Admission Date</label>
+        <input type="date" id="admission-date" name="admission-date" required>
+
+        <div class="button-group">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Clear">
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
