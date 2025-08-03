@@ -1,0 +1,23 @@
+table{
+    font-family: monospace;
+    display:table-cell;
+    text-align: center;
+    background-color: rgb(8, 8, 2);
+    color: white;
+    border: 2px solid rgb(0, 0, 0);
+    }
+table:hover{
+    box-shadow:0 4px 8px black ;
+}
+th:hover{
+background-color: red;
+transform: translateY(-5px);
+}
+td{
+    background-color: aqua;
+    font-weight: 700;
+    color: black;
+}
+td:hover{
+    transform: translateY(-2px);
+}
